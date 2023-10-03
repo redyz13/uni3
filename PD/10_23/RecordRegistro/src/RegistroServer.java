@@ -37,8 +37,10 @@ public class RegistroServer {
 
                 socket.close();
 
-                if (record.nome().equals("quit"))
+                if (record.nome().equals("quit")) {
+                    serverSocket.close();
                     System.exit(0);
+                }
             }
         } catch (Throwable t) {
             logger.severe(t.getMessage());
