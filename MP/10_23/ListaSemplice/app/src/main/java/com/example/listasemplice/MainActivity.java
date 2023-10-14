@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
 
         listView = findViewById(R.id.mylistview);
 
-        Log.d("DEBUG", "ListView creat: listView = " + listView);
+        Log.d("DEBUG", "ListView create: listView = " + listView);
 
         ArrayAdapter<String> arrayAdapter = new ArrayAdapter<>(this, R.layout.list_element,
                 R.id.textViewList, array);

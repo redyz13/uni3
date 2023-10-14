@@ -12,7 +12,7 @@
     android:layout_height="wrap_content"
     android:background="#DCBEEB"
     android:gravity="center"
-    android:text="Lista"
+    android:text="Lista Custom"
     android:textColor="@color/black"
     android:fontFamily="@font/courier_prime_bold"
     android:textSize="30sp"/>
