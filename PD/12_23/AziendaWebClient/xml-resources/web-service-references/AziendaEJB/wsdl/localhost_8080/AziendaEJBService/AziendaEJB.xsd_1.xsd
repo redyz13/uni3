@@ -1,0 +1,138 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.4.3 (RELEASE-2.4.3-ad3323c; 2019-01-21T17:46:06+0000) JAXWS-RI/2.3.2 JAXWS-API/2.3.2 JAXB-RI/2.3.2 JAXB-API/2.3.2 git-revision#unknown. --><xs:schema xmlns:tns="http://ejb/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://ejb/">
+
+<xs:element name="createAzienda" type="tns:createAzienda"/>
+
+<xs:element name="createAziendaResponse" type="tns:createAziendaResponse"/>
+
+<xs:element name="deleteAzienda" type="tns:deleteAzienda"/>
+
+<xs:element name="deleteAziendaResponse" type="tns:deleteAziendaResponse"/>
+
+<xs:element name="findAll" type="tns:findAll"/>
+
+<xs:element name="findAllResponse" type="tns:findAllResponse"/>
+
+<xs:element name="printPersoneDaAssumere" type="tns:printPersoneDaAssumere"/>
+
+<xs:element name="printPersoneDaAssumereResponse" type="tns:printPersoneDaAssumereResponse"/>
+
+<xs:element name="searchByID" type="tns:searchByID"/>
+
+<xs:element name="searchByIDResponse" type="tns:searchByIDResponse"/>
+
+<xs:element name="searchByTipologia" type="tns:searchByTipologia"/>
+
+<xs:element name="searchByTipologiaResponse" type="tns:searchByTipologiaResponse"/>
+
+<xs:element name="updateAssunzioni" type="tns:updateAssunzioni"/>
+
+<xs:element name="updateAssunzioniResponse" type="tns:updateAssunzioniResponse"/>
+
+<xs:element name="updateAzienda" type="tns:updateAzienda"/>
+
+<xs:element name="updateAziendaResponse" type="tns:updateAziendaResponse"/>
+
+<xs:complexType name="printPersoneDaAssumere">
+<xs:sequence>
+<xs:element name="azienda" type="tns:azienda" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="azienda">
+<xs:sequence>
+<xs:element name="assunzioni" type="xs:boolean"/>
+<xs:element name="id" type="xs:long" minOccurs="0"/>
+<xs:element name="nome" type="xs:string" minOccurs="0"/>
+<xs:element name="nomeAmministratore" type="xs:string" minOccurs="0"/>
+<xs:element name="numeroSedi" type="xs:int"/>
+<xs:element name="personeDaAssumere" type="xs:int"/>
+<xs:element name="provincia" type="xs:string" minOccurs="0"/>
+<xs:element name="responsabileHR" type="xs:string" minOccurs="0"/>
+<xs:element name="tipologia" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="printPersoneDaAssumereResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="findAll">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="findAllResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:azienda" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="createAzienda">
+<xs:sequence>
+<xs:element name="arg0" type="tns:azienda" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="createAziendaResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:azienda" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteAzienda">
+<xs:sequence>
+<xs:element name="arg0" type="tns:azienda" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteAziendaResponse">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="updateAzienda">
+<xs:sequence>
+<xs:element name="arg0" type="tns:azienda" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateAziendaResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:azienda" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="searchByID">
+<xs:sequence>
+<xs:element name="id" type="xs:long" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="searchByIDResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:azienda" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateAssunzioni">
+<xs:sequence>
+<xs:element name="arg0" type="xs:long" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateAssunzioniResponse">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="searchByTipologia">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="searchByTipologiaResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:azienda" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
