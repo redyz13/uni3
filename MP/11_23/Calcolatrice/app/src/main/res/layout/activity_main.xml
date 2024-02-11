@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context=".MainActivity"
+  android:background="#E6A4B4">
+
+  <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:orientation="vertical">
+
+    <TextView
+      android:id="@+id/input"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text=""
+      android:textColor="@color/black"
+      android:background="#F5EEE6"
+      android:gravity="end"
+      android:padding="10dp"
+      android:layout_margin="10dp"
+      android:textSize="20sp" />
+
+    <TextView
+      android:id="@+id/output"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text=""
+      android:textColor="@color/black"
+      android:background="#F5EEE6"
+      android:gravity="end"
+      android:padding="10dp"
+      android:layout_margin="10dp"
+      android:textSize="20sp" />
+
+    <RelativeLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content">
+
+      <TextView
+        android:id="@+id/memoryText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Memory: "
+        android:textColor="@color/black"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingStart="10dp" />
+
+      <TextView
+        android:id="@+id/memoryValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/black"
+        android:layout_toEndOf="@id/memoryText"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingStart="10dp" />
+    </RelativeLayout>
+
+    <GridLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content">
+
+      <Button
+        android:id="@+id/C"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="C"
+        android:onClick="headerButtonPressed"
+        android:backgroundTint="#F3D7CA"
+        android:textColor="@color/black"
+        android:layout_column="0"
+        android:layout_row="0"
+        android:layout_margin="5dp" />
+
+      <Button
+        android:id="@+id/MC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MC"
+        android:onClick="headerButtonPressed"
+        android:backgroundTint="#F3D7CA"
+        android:textColor="@color/black"
+        android:layout_column="1"
+        android:layout_row="0"
+        android:layout_margin="5dp" />
+
+      <Button
+        android:id="@+id/MS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MS"
+        android:onClick="headerButtonPressed"
+        android:backgroundTint="#F3D7CA"
+        android:textColor="@color/black"
+        android:layout_column="2"
+        android:layout_row="0"
+        android:layout_margin="5dp" />
+
+      <Button
+        android:id="@+id/MR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MR"
+        android:onClick="headerButtonPressed"
+        android:backgroundTint="#F3D7CA"
+        android:textColor="@color/black"
+        android:layout_column="3"
+        android:layout_row="0"
+        android:layout_margin="5dp" />
+    </GridLayout>
+
+    <GridLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content">
+
+      <Button
+        android:id="@+id/seven"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="7"
+        android:onClick="buttonPressed"
+        android:backgroundTint="#FFF8E3"
+        android:textColor="@color/black"
+        android:layout_column="0"
+        android:layout_row="0"
+        android:layout_margin="5dp" />
+
+      <Button
+        android:id="@+id/eight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="8"
+        android:onClick="buttonPressed"
+        android:backgroundTint="#FFF8E3"
+        android:textColor="@color/black"
+        android:layout_column="1"
+        android:layout_row="0"
+        android:layout_margin="5dp" />
+
+      <Button
+        android:id="@+id/nine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="9"
+        android:onClick="buttonPressed"
+        android:backgroundTint="#FFF8E3"
+        android:textColor="@color/black"
+        android:layout_column="2"
+        android:layout_row="0"
+        android:layout_margin="5dp" />
+
+      <Button
+        android:id="@+id/divide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="/"
+        android:onClick="operatorPressed"
+        android:backgroundTint="#F3D7CA"
+        android:textColor="@color/black"
+        android:layout_column="3"
+        android:layout_row="0"
+        android:layout_margin="5dp" />
+
+      <Button
+        android:id="@+id/four"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4"
+        android:onClick="buttonPressed"
+        android:backgroundTint="#FFF8E3"
+        android:textColor="@color/black"
+        android:layout_column="0"
+        android:layout_row="1"
+        android:layout_margin="5dp" />
+
+      <Button
+        android:id="@+id/five"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5"
+        android:onClick="buttonPressed"
+        android:backgroundTint="#FFF8E3"
+        android:textColor="@color/black"
+        android:layout_column="1"
+        android:layout_row="1"
+        android:layout_margin="5dp" />
+
+      <Button
+        android:id="@+id/six"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="6"
+        android:onClick="buttonPressed"
+        android:backgroundTint="#FFF8E3"
+        android:textColor="@color/black"
+        android:layout_column="2"
+        android:layout_row="1"
+        android:layout_margin="5dp" />
+
+      <Button
+        android:id="@+id/multiply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="*"
+        android:onClick="operatorPressed"
+        android:backgroundTint="#F3D7CA"
+        android:textColor="@color/black"
+        android:layout_column="3"
+        android:layout_row="1"
+        android:layout_margin="5dp" />
+
+      <Button
+        android:id="@+id/one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:onClick="buttonPressed"
+        android:backgroundTint="#FFF8E3"
+        android:textColor="@color/black"
+        android:layout_column="0"
+        android:layout_row="2"
+        android:layout_margin="5dp" />
+
+      <Button
+        android:id="@+id/two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2"
+        android:onClick="buttonPressed"
+        android:backgroundTint="#FFF8E3"
+        android:textColor="@color/black"
+        android:layout_column="1"
+        android:layout_row="2"
+        android:layout_margin="5dp" />
+
+      <Button
+        android:id="@+id/three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3"
+        android:onClick="buttonPressed"
+        android:backgroundTint="#FFF8E3"
+        android:textColor="@color/black"
+        android:layout_column="2"
+        android:layout_row="2"
+        android:layout_margin="5dp" />
+
+      <Button
+        android:id="@+id/minus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:onClick="operatorPressed"
+        android:backgroundTint="#F3D7CA"
+        android:textColor="@color/black"
+        android:layout_column="3"
+        android:layout_row="2"
+        android:layout_margin="5dp" />
+
+      <Button
+        android:id="@+id/zero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:onClick="buttonPressed"
+        android:backgroundTint="#FFF8E3"
+        android:textColor="@color/black"
+        android:layout_column="0"
+        android:layout_row="3"
+        android:layout_margin="5dp" />
+
+      <Button
+        android:id="@+id/dot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="."
+        android:onClick="dotPressed"
+        android:backgroundTint="#FFF8E3"
+        android:textColor="@color/black"
+        android:layout_column="1"
+        android:layout_row="3"
+        android:layout_margin="5dp" />
+
+      <Button
+        android:id="@+id/equals"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="="
+        android:onClick="equalPressed"
+        android:backgroundTint="#FFF8E3"
+        android:textColor="@color/black"
+        android:layout_column="2"
+        android:layout_row="3"
+        android:layout_margin="5dp" />
+
+      <Button
+        android:id="@+id/plus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:onClick="operatorPressed"
+        android:backgroundTint="#F3D7CA"
+        android:textColor="@color/black"
+        android:layout_column="3"
+        android:layout_row="3"
+        android:layout_margin="5dp" />
+    </GridLayout>
+  </LinearLayout>
+</RelativeLayout>

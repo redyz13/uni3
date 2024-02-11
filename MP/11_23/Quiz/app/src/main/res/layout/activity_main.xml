@@ -1,0 +1,127 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context=".MainActivity">
+
+  <TextView
+    android:id="@+id/quesitoN"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Quesito n. "
+    android:textColor="@color/black"
+    android:textSize="30sp"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true" />
+
+  <TextView
+    android:id="@+id/questionNumber"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text=""
+    android:textColor="@color/black"
+    android:textSize="30sp"
+    android:layout_toEndOf="@id/quesitoN"
+    android:layout_marginStart="-5dp"
+    android:layout_centerHorizontal="true" />
+
+  <LinearLayout
+    android:id="@+id/questionContainer"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_centerInParent="true">
+
+    <TextView
+      android:id="@+id/questionText"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text=""
+      android:textColor="@color/black"
+      android:textSize="20sp"
+      android:layout_marginTop="10dp"
+      android:layout_gravity="center_horizontal" />
+
+    <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:layout_gravity="center_horizontal"
+      android:layout_marginTop="10dp">
+
+      <Button
+        android:id="@+id/trueButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:onClick="onClickAnswer"
+        android:text="Vero" />
+
+      <Button
+        android:id="@+id/falseButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:onClick="onClickAnswer"
+        android:text="Falso" />
+    </LinearLayout>
+
+    <Button
+      android:id="@+id/suggestButton"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:layout_marginBottom="10dp"
+      android:onClick="onClickAdvice"
+      android:text="Suggerimento" />
+
+    <TextView
+      android:id="@+id/correctAnswers"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:text="Risposte corrette valide: 0"
+      android:textColor="@color/black"
+      android:textSize="20sp"/>
+    <TextView
+      android:id="@+id/wrongAnswers"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:text="Risposte corrette non valide: 0"
+      android:textColor="@color/black"
+      android:textSize="20sp"/>
+    <TextView
+      android:id="@+id/totalAnswers"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:text="Risposte totali: 0"
+      android:textColor="@color/black"
+      android:textSize="20sp"/>
+  </LinearLayout>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_alignParentBottom="true"
+    android:gravity="center_horizontal">
+
+    <Button
+      android:id="@+id/backButton"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:text="Indietro"
+      android:onClick="onClickAnotherAnswer"
+      android:layout_weight="1" />
+
+    <Button
+      android:id="@+id/nextButton"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:text="Avanti"
+      android:onClick="onClickAnotherAnswer"
+      android:layout_weight="1" />
+  </LinearLayout>
+</RelativeLayout>

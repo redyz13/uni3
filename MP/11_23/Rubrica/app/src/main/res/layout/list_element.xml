@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+  
+  <ImageView
+    android:id="@+id/picture"
+    android:layout_width="55dp"
+    android:layout_height="55dp"
+    android:layout_gravity="center"
+    android:contentDescription="Foto contatto"
+    android:onClick="onPictureClick"/>
+  
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+      android:id="@+id/name"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textColor="@color/black"
+      android:gravity="center"
+      android:fontFamily="@font/courier_prime_regular"
+      android:padding="5dp"
+      android:textSize="20sp"
+      android:contentDescription="Nome contatto"
+      android:onClick="onNameClick"/>
+
+    <TextView
+      android:id="@+id/phone"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textColor="@color/black"
+      android:gravity="center"
+      android:fontFamily="@font/courier_prime_regular"
+      android:padding="5dp"
+      android:textSize="20sp"
+      android:contentDescription="Telefono contatto"
+      android:onClick="onTelClick"/>
+  </LinearLayout>
+
+</LinearLayout>

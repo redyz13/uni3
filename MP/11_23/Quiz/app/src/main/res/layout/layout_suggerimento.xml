@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="14dp" >
+
+        <Button
+            android:id="@+id/buttonMostra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClickMostra"
+            android:text="Mostra" />
+
+        <Button
+            android:id="@+id/buttonTorna"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClickTorna"
+            android:text="Ritorna" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/testoRisposta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/linearLayout1"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:hint="La risposta è ..."
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+     <TextView
+        android:id="@+id/testoQuesito"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/testoRisposta"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Quesito"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>
