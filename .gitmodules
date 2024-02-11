@@ -1,3 +1,9 @@
 [submodule "FIA"]
 	path = FIA
 	url = https://github.com/Esistere/esistere-ia
+[submodule "IS/esistere-frontend"]
+	path = IS/esistere-frontend
+	url = https://github.com/Esistere/esistere-frontend
+[submodule "IS/esistere-backend"]
+	path = IS/esistere-backend
+	url = https://github.com/Esistere/esistere-backend
