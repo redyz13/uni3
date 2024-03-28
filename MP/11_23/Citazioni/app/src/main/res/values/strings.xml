@@ -1,0 +1,17 @@
+<resources>
+  <string name="app_name">Citazioni</string>
+  <string-array name="Authors">
+    <item>Albert Einstein</item>
+    <item>Galileo Galilei</item>
+    <item>Giacomo Leopardi</item>
+    <item>Pablo Neruda</item>
+    <item>Alberto Sordi</item>
+  </string-array>
+  <string-array name="Quotes">
+    <item>Quando un uomo siede un\'ora in compagnia di una bella ragazza, sembra sia passato un minuto. Ma fatelo sedere su una stufa per un minuto e gli sembrerà più lungo di qualsiasi ora. Questa è la relatività.</item>
+    <item>Quello, che noi ci immaginiamo, bisogna che sia o una delle cose già vedute, o un composto di cose o di parti delle cose altra volta vedute</item>
+    <item>Il più certo modo di celare agli altri i confini del proprio sapere, è di non trapassarli</item>
+    <item>Il bambino che non gioca più è diventato adulto, ma l\'adulto che non gioca più ha perso per sempre il bambino che aveva dentro di sè.</item>
+    <item>(Rivolto a un beduino nel mezzo del deserto) Ammazza che spiagge che c\'avete!</item>
+  </string-array>
+</resources>
