@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:gravity="center_horizontal"
+  android:orientation="vertical"
+  android:padding="48dp"
+  tools:context=".MainActivity">
+
+  <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Slot Machine"
+    android:textSize="32sp"
+    android:padding="12dp" />
+
+  <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1">
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center_horizontal"
+      android:orientation="vertical"
+      android:padding="20dp">
+
+      <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+          android:layout_width="20dp"
+          android:layout_height="wrap_content"
+          android:gravity="center_horizontal"
+          android:orientation="vertical"
+          android:layout_margin="8dp">
+
+          <TextView
+            android:id="@+id/rotor1_prev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="9" />
+
+          <TextView
+            android:id="@+id/rotor1_current"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="28sp"
+            android:textColor="#800080"
+            android:text="0" />
+
+          <TextView
+            android:id="@+id/rotor1_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="1" />
+        </LinearLayout>
+
+        <LinearLayout
+          android:layout_width="20dp"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:gravity="center_horizontal"
+          android:layout_margin="8dp">
+
+          <TextView
+            android:id="@+id/rotor2_prev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="3" />
+
+          <TextView
+            android:id="@+id/rotor2_current"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="28sp"
+            android:textColor="#800080"
+            android:text="4" />
+
+          <TextView
+            android:id="@+id/rotor2_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="5" />
+        </LinearLayout>
+
+        <LinearLayout
+          android:layout_width="20dp"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:gravity="center_horizontal"
+          android:layout_margin="8dp">
+
+          <TextView
+            android:id="@+id/rotor3_prev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="6" />
+
+          <TextView
+            android:id="@+id/rotor3_current"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="28sp"
+            android:textColor="#800080"
+            android:text="7" />
+
+          <TextView
+            android:id="@+id/rotor3_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="8" />
+        </LinearLayout>
+
+        <LinearLayout
+          android:layout_width="20dp"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:layout_margin="8dp">
+
+          <TextView
+            android:id="@+id/rotor4_prev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="7" />
+
+          <TextView
+            android:id="@+id/rotor4_current"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="28sp"
+            android:textColor="#800080"
+            android:text="8" />
+
+          <TextView
+            android:id="@+id/rotor4_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="9" />
+        </LinearLayout>
+      </LinearLayout>
+
+      <TextView
+        android:id="@+id/scoreDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:text="Punteggio: 0"
+        android:layout_marginTop="20dp" />
+
+      <Button
+        android:id="@+id/playButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gioca"
+        android:layout_marginTop="16dp" />
+
+      <Button
+        android:id="@+id/resetButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Azzera Punteggio"
+        android:layout_marginTop="8dp" />
+
+    </LinearLayout>
+  </ScrollView>
+</LinearLayout>
